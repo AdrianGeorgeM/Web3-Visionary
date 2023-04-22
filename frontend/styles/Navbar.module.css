@@ -1,13 +1,40 @@
 .navbar {
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	padding: 2rem 4rem 0.8rem 4rem;
-	gap: 2rem;
-	margin-bottom: 4rem;
+	align-items: center;
+	padding: 1rem;
+	background-color: #333;
+	color: white;
+}
+.searchBar {
+	display: flex;
+	align-items: center;
 }
 
-.logo {
-	width: 8rem;
-	cursor: pointer;
+.searchBar input {
+	padding: 0.5rem;
+	margin-right: 0.5rem;
+}
+
+.logo a {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+}
+
+.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.menu li {
+	margin: 0 1rem;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
 }
