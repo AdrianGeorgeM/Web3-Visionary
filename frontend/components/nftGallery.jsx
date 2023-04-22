@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import styles from '../styles/NftGallery.module.css';
 import NFTCollectionInfo from '../components/nftCollectionInfoDisplay.jsx';
 import NftCreator from '../components/nftGallery.jsx';
+import NftMinter from '../components/nftMinter.jsx';
 import { useAccount } from 'wagmi';
 
 export default function NFTGallery({}) {
@@ -178,6 +179,14 @@ export default function NFTGallery({}) {
 				collectionAddress={'0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D'}
 			/>
 			<NftCreator contractAddress={'0x9FaCAf075Cda7C0947DA0F0B4164332e01422E97'} />
+
+			<NftMinter
+				contractAddress={'0x9FaCAf075Cda7C0947DA0F0B4164332e01422E97'}
+				tokenUri={
+					'https://ipfs.filebase.io/ipfs/QmcZMwBfYwRfysPyLaJzMk5RwsgXnVz7JDkbh6eRbAfSjJ/QmdeEmVuLKxhy63CfLkt193sYTRHLLCH6qzyghBS27k7uJ'
+				}
+				abi={contract.abi}
+			/>
 		</div>
 	);
 }
