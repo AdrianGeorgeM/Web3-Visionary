@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from '../styles/NftGallery.module.css';
 import NFTCollectionInfo from '../components/nftCollectionInfoDisplay.jsx';
+import NftCreator from '../components/nftGallery.jsx';
 import { useAccount } from 'wagmi';
 
 export default function NFTGallery({}) {
@@ -176,6 +177,7 @@ export default function NFTGallery({}) {
 			<NFTCollectionInfo
 				collectionAddress={'0xBC4CA0EdA7647A8aB7C2061c2E118A18a936f13D'}
 			/>
+			<NftCreator contractAddress={'0x9FaCAf075Cda7C0947DA0F0B4164332e01422E97'} />
 		</div>
 	);
 }
