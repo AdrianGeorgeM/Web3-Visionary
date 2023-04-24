@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/adrianworkplace/Documents/Sites/Web3-Visionary/backend/contracts/SmartContract.sol": {
-      "lastModificationDate": 1682371490244,
-      "contentHash": "a2c778bb9041f031e5c1f8efd2540fda",
+      "lastModificationDate": 1682371829117,
+      "contentHash": "94567d6fbc76a04512af4ef6c364ba92",
       "sourceName": "contracts/SmartContract.sol",
       "solcConfig": {
         "version": "0.7.3",
