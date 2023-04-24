@@ -1,28 +1,20 @@
-require('@nomicfoundation/hardhat-toolbox');
-require('dotenv').config()
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
+
+require('dotenv').config();
+require('@nomiclabs/hardhat-ethers');
+
+const { API_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
-	solidity: {
-		version: "0.8.9",
-		settings: {
-			optimizer: {
-				enabled: true
-			}
-		}
-	},
-	allowUnlimitedContractSize: true,
+	solidity: '0.7.3',
+	defaultNetwork: 'sepolia',
 	networks: {
 		hardhat: {},
-		ETH_MAINNET: {
-			accounts: [`${process.env.PRIVATE_KEY}`],
-			url: `https://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
+		sepolia: {
+			url: API_URL,
+			accounts: [''],
 		},
-		ETH_GOERLI: {
-			accounts: [`${process.env.PRIVATE_KEY}`],
-			url: `https://eth-goerli.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`
-		}
 	},
-	etherscan: {
-		apiKey: `${process.env.ETHERSCAN_API_KEY}`
-	}
-}
+};

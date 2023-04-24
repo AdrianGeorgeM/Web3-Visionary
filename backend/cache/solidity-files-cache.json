@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/adrianworkplace/Documents/Sites/Web3-Visionary/backend/contracts/SmartContract.sol": {
+      "lastModificationDate": 1682371490244,
+      "contentHash": "a2c778bb9041f031e5c1f8efd2540fda",
+      "sourceName": "contracts/SmartContract.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.7.3"
+      ],
+      "artifacts": [
+        "SmartContract"
+      ]
+    }
+  }
+}
